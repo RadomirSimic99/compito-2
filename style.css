@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    position: relative;
+    height: 100vh;
+}
+.padre {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    
+    
+}
+.contenitoreimg {
+    height: 750px;
+    width: 1150px;
+    background-color: white;
+    background-image: url(./img/miami.jpg);
+    background-size: cover;
+    border-radius: 20px;
+}
+.due {
+    position: absolute;
+    width: 140px;
+    right: 75em;
+    cursor: pointer;
+    height: 80px;
+    background-color: red;
+    border-radius: 20px;
+    top: 350px;
+}
+.help{
+ color: white;
+ font-family:Arial;
+ text-align: center;
+ padding-top: 20px;
+ font-size: 30px;
+}   
+.tre {
+    position: absolute;
+    bottom: 350px;
+    right: 75em;
+    cursor: pointer;
+    height: 80px;
+    width: 80px;
+}
+.barre  {
+  height: 70px;
+  font-size: 70px;
+}
+.quattro {
+    position: absolute;
+    bottom: 360px;
+    right: 40%;
+    cursor: pointer;
+    height: 60px;
+}
+.freccia{
+    height: 70px;
+    font-size: 70px;
+}
+.cinque {
+    position: absolute;
+    bottom: 360px;
+    left: 110em;
+    cursor: pointer;
+    height: 60px;
+}
+.lente {
+    height: 70px;
+    font-size: 70px;
+}
+.contenitoreimg:hover {
+    background-color: rgba(0,0,0,0.5);
+    opacity: 0.8;
+}
+.contenitoreimg:hover .due {
+    animation: SlideMe .9s ease-in; 
+}
+.contenitoreimg:hover .tre {
+    animation: SlideMetwo .9s ease-in;  
+}
+.contenitoreimg:hover .quattro {
+    animation: SlideMeOra .9s ease-in; 
+}
+.contenitoreimg:hover .cinque {
+    animation: Slidefour .9s ease-in;  
+}
+@keyframes SlideMe {
+    0%{
+       transform: skewY(53deg) translateY(-500px);
+    }
+    100%{
+        transform: skew(0deg);
+    }
+}
+@keyframes SlideMetwo {
+    0%{
+        transform: translateY(500px);
+     }
+     100%{
+         transform:translateX(0) ;
+     }
+}
+@keyframes SlideMeOra {
+    0%{
+        transform: translateY(500px);
+     }
+     100%{
+         transform:translateX(0) ;
+     }
+}
+@keyframes Slidefour {
+    0%{
+        transform: translateY(500px);
+     }
+     100%{
+         transform:translateX(0) ;
+     }
+}
+
